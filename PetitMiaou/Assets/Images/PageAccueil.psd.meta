@@ -1,0 +1,789 @@
+fileFormatVersion: 2
+guid: 66f002ec1814cfa42af0ac4f119f7358
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: eee7339015ee32f41b5c1e7b15eb87e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: 3_LOTUS_PetaleAvant
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 14975
+      width: 2020
+      height: 1267
+    spriteID: f6b85c93c2fa29140b3e2a5b5aa18d17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 14975}
+    spritePosition: {x: 3009, y: 1218}
+  - name: 3_CHAT_Tete
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6884
+      y: 6073
+      width: 598
+      height: 424
+    spriteID: 3c5bbb9d785913c408d4168fc8de394b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6884, y: 6073}
+    spritePosition: {x: 3705, y: 2479}
+  - name: 3_CHAT_Corps
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7542
+      y: 10573
+      width: 533
+      height: 224
+    spriteID: 637a42ba95295c44e81f714c4bb25964
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7542, y: 10573}
+    spritePosition: {x: 3707, y: 2315}
+  - name: 3_FEE_Bras
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6650
+      y: 10573
+      width: 884
+      height: 218
+    spriteID: 176e1e95d14a38248a86e8afb2083f6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6650, y: 10573}
+    spritePosition: {x: 3547, y: 2581}
+  - name: 3_FEE_
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6650
+      y: 8664
+      width: 1487
+      height: 1901
+    spriteID: 69aa06b9bad83df43aca6ffad4077068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6650, y: 8664}
+    spritePosition: {x: 3539, y: 2166}
+  - name: 3_FEE_AileGauche
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6884
+      y: 5305
+      width: 893
+      height: 760
+    spriteID: 33a3ac67d79ed5e40b86a00ac4ddffc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6884, y: 5305}
+    spritePosition: {x: 3978, y: 2512}
+  - name: 3_FEE_AileDroite
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6884
+      y: 4512
+      width: 875
+      height: 785
+    spriteID: e42088c0d9d98814885d7a6ae6f85ceb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6884, y: 4512}
+    spritePosition: {x: 3105, y: 2528}
+  - name: 3_LOTUS1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4512
+      width: 2025
+      height: 2529
+    spriteID: 1b8f59f4dfd3f7e45aaf77d6f51dd699
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4512}
+    spritePosition: {x: 2992, y: 1816}
+  - name: 3_LOTUS2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4574
+      y: 4512
+      width: 2302
+      height: 2068
+    spriteID: d41080c513e5fe04483508c9f650a2e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4574, y: 4512}
+    spritePosition: {x: 1932, y: 1435}
+  - name: 3_LOTUS3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4574
+      y: 6588
+      width: 2301
+      height: 2068
+    spriteID: f6d8909d22e96f1429e5037a04407197
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4574, y: 6588}
+    spritePosition: {x: 3776, y: 1435}
+  - name: 3_LOTUS4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 12666
+      width: 2069
+      height: 2301
+    spriteID: e6f66f849ef49b749b3cd7d9cbd67ebb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 12666}
+    spritePosition: {x: 2453, y: 1723}
+  - name: 3_LOTUS5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4574
+      y: 8664
+      width: 2068
+      height: 2301
+    spriteID: d33bfe1a93c46ad4a9a83df8f8f1b586
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4574, y: 8664}
+    spritePosition: {x: 3488, y: 1723}
+  - name: 3_LOTUS6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 6545
+      width: 2528
+      height: 2025
+    spriteID: 05f01acf686996841a44d53522fbf5a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 6545}
+    spritePosition: {x: 1626, y: 1062}
+  - name: 3_LOTUS7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 4512
+      width: 2529
+      height: 2025
+    spriteID: 90c43f15136a269489629f7af8e2061d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 4512}
+    spritePosition: {x: 3883, y: 1062}
+  - name: 3_FEUILLE1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4574
+      y: 10973
+      width: 2143
+      height: 2135
+    spriteID: 1e794b94612011b458d201206b06720f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4574, y: 10973}
+    spritePosition: {x: 2002, y: 157}
+  - name: 3_FEUILLE2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4574
+      y: 13116
+      width: 2143
+      height: 2135
+    spriteID: 8230ce269be4e2945922f8d797aee655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4574, y: 13116}
+    spritePosition: {x: 3855, y: 157}
+  - name: 3_FEUILLE3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 8578
+      width: 2470
+      height: 2036
+    spriteID: 280263dfac33738488ce9a3019c83640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 8578}
+    spritePosition: {x: 1552, y: 560}
+  - name: 3_FEUILLE4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 2037
+      y: 10622
+      width: 2470
+      height: 2036
+    spriteID: f9585da3bc80ffa4ab3803c7e0b0fcc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2037, y: 10622}
+    spritePosition: {x: 3978, y: 560}
+  - name: Ciel
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 8000
+      height: 4500
+    spriteID: 2f4be854f70db5c4bb605f0b538dceb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: 3_LOTUS_PetaleAvant
+    spriteName: 3_LOTUS_PetaleAvant
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f6b85c93c2fa29140b3e2a5b5aa18d17
+    layerID: 65
+    mosaicPosition: {x: 2037, y: 14975}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_CHAT
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: e842fb3c348e11f44884e4fcd545848e
+    layerID: 76
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 3_CHAT_Tete
+    spriteName: 3_CHAT_Tete
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 3c5bbb9d785913c408d4168fc8de394b
+    layerID: 60
+    mosaicPosition: {x: 6884, y: 6073}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_CHAT_Corps
+    spriteName: 3_CHAT_Corps
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 637a42ba95295c44e81f714c4bb25964
+    layerID: 52
+    mosaicPosition: {x: 7542, y: 10573}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEE
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 5075d5732845aad4c885d1249d9987c5
+    layerID: 72
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 3_FEE_Bras
+    spriteName: 3_FEE_Bras
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 176e1e95d14a38248a86e8afb2083f6d
+    layerID: 49
+    mosaicPosition: {x: 6650, y: 10573}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEE_
+    spriteName: 3_FEE_
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 69aa06b9bad83df43aca6ffad4077068
+    layerID: 48
+    mosaicPosition: {x: 6650, y: 8664}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEE_AileGauche
+    spriteName: 3_FEE_AileGauche
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 33a3ac67d79ed5e40b86a00ac4ddffc4
+    layerID: 45
+    mosaicPosition: {x: 6884, y: 5305}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEE_AileDroite
+    spriteName: 3_FEE_AileDroite
+    isGroup: 0
+    parentIndex: 4
+    spriteID: e42088c0d9d98814885d7a6ae6f85ceb
+    layerID: 41
+    mosaicPosition: {x: 6884, y: 4512}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS1
+    spriteName: 3_LOTUS1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b8f59f4dfd3f7e45aaf77d6f51dd699
+    layerID: 35
+    mosaicPosition: {x: 4, y: 4512}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS2
+    spriteName: 3_LOTUS2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d41080c513e5fe04483508c9f650a2e9
+    layerID: 32
+    mosaicPosition: {x: 4574, y: 4512}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS3
+    spriteName: 3_LOTUS3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f6d8909d22e96f1429e5037a04407197
+    layerID: 29
+    mosaicPosition: {x: 4574, y: 6588}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS4
+    spriteName: 3_LOTUS4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6f66f849ef49b749b3cd7d9cbd67ebb
+    layerID: 17
+    mosaicPosition: {x: 2037, y: 12666}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS5
+    spriteName: 3_LOTUS5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d33bfe1a93c46ad4a9a83df8f8f1b586
+    layerID: 26
+    mosaicPosition: {x: 4574, y: 8664}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS6
+    spriteName: 3_LOTUS6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 05f01acf686996841a44d53522fbf5a4
+    layerID: 20
+    mosaicPosition: {x: 2037, y: 6545}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_LOTUS7
+    spriteName: 3_LOTUS7
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 90c43f15136a269489629f7af8e2061d
+    layerID: 23
+    mosaicPosition: {x: 2037, y: 4512}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEUILLE1
+    spriteName: 3_FEUILLE1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1e794b94612011b458d201206b06720f
+    layerID: 12
+    mosaicPosition: {x: 4574, y: 10973}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEUILLE2
+    spriteName: 3_FEUILLE2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8230ce269be4e2945922f8d797aee655
+    layerID: 6
+    mosaicPosition: {x: 4574, y: 13116}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEUILLE3
+    spriteName: 3_FEUILLE3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 280263dfac33738488ce9a3019c83640
+    layerID: 9
+    mosaicPosition: {x: 2037, y: 8578}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 3_FEUILLE4
+    spriteName: 3_FEUILLE4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f9585da3bc80ffa4ab3803c7e0b0fcc6
+    layerID: 3
+    mosaicPosition: {x: 2037, y: 10622}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ciel
+    spriteName: Ciel
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2f4be854f70db5c4bb605f0b538dceb0
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
