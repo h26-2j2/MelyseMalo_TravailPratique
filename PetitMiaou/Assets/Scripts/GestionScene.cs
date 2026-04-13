@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class GestionScene : MonoBehaviour
@@ -33,10 +34,5 @@ public class GestionScene : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
         Debug.Log("Scène rechargée : " + scene.name);
-    }
-
-    public void Muet()
-    {
-        Debug.Log("Muet");
     }
 }
