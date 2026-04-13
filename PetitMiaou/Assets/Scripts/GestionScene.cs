@@ -34,10 +34,9 @@ public class GestionScene : MonoBehaviour
         SceneManager.LoadScene(scene.name);
         Debug.Log("Scène rechargée : " + scene.name);
     }
+
     public void Muet()
     {
         Debug.Log("Muet");
     }
-
-    //https://www.youtube.com/watch?v=DX7HyN7oJjE
 }
