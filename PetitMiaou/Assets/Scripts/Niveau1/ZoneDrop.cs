@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,8 @@ public class ZoneDrop : MonoBehaviour
     Vector3 positionInitialePate;
     Vector3 positionInitialeCroquettes;
 
-
+    public AudioSource audio;
+    public AudioClip miaou;
     void Start()
     {
         positionInitialChat = chat.transform.position;
@@ -52,6 +54,7 @@ public class ZoneDrop : MonoBehaviour
     public void DeplacementChat()
     {
         chat.transform.position = new Vector3(0, -1f, 0);
+        audio.PlayOneShot(miaou);
         Invoke("Replacer", 1f);
     }
     public void Replacer()
