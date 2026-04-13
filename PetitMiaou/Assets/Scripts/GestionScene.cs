@@ -22,7 +22,7 @@ public class GestionScene : MonoBehaviour
         Debug.Log("Niveau 3 chargé");
     }
 
-    public void RetourMenu()
+    public void RetourAccueil()
     {
         SceneManager.LoadScene(0);
         Debug.Log("Menu chargé");
@@ -38,6 +38,6 @@ public class GestionScene : MonoBehaviour
     {
         Debug.Log("Muet");
     }
-    
-    
+
+    //https://www.youtube.com/watch?v=DX7HyN7oJjE
 }
