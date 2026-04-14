@@ -1,12 +1,9 @@
-using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
-using static UnityEditor.Progress;
 
 public class ZoneDrop : MonoBehaviour
 {
+    //Game object
     public GameObject pointSnap;
     public GameObject chat;
     public GameObject verreLait;
@@ -18,45 +15,56 @@ public class ZoneDrop : MonoBehaviour
     public GameObject croquettes;
     public GameObject pate;
 
+    //Position initial des objets
     Vector3 positionInitialChat;
     Vector3 positionInitialeLait;
     Vector3 positionInitialeEau;
     Vector3 positionInitialePate;
     Vector3 positionInitialeCroquettes;
 
+    //Audio
     public AudioSource audio;
     public AudioClip miaou;
+
     void Start()
     {
+        //Initialisation des variables
         positionInitialChat = chat.transform.position;
         positionInitialeLait = verreLait.transform.position;
         positionInitialeEau = verreEau.transform.position;
         positionInitialePate = cannePate.transform.position;
         positionInitialeCroquettes = sacCroquettes.transform.position;
     }
-    void Update()
-    {
-        //Debug.Log("ZoneDrop actif");
-    }
 
+    //Objet déposé dans la zone
     public void OnDrop(BaseEventData eventData)
     {
         PointerEventData data = eventData as PointerEventData;
-        GameObject objet = data.pointerDrag;
 
+        //Recupere l'objet drag pour le mettre au milieu de la gamelle
+        GameObject objet = data.pointerDrag;
         if (objet != null)
         {
             objet.transform.position = pointSnap.transform.position;
         }
+
+        //Appel de la Fonction DeplacementChat() après 1 seconde
         Invoke("DeplacementChat", 1f);
 
     }
+
+    //Mini animation du déplacement du chat avec effet sonore.
     public void DeplacementChat()
     {
+        //Deplacement du chat et effet sonore
         chat.transform.position = new Vector3(0, -1f, 0);
         audio.PlayOneShot(miaou);
+
+        //Appel de la Fonction Replacer() après 1 seconde
         Invoke("Replacer", 1f);
     }
+
+    //Retour au stade initial
     public void Replacer()
     {
         //Enlève le parent
@@ -65,7 +73,7 @@ public class ZoneDrop : MonoBehaviour
         verreEau.transform.SetParent(null);
         cannePate.transform.SetParent(null);
         sacCroquettes.transform.SetParent(null);
-        
+
         //Remet les objets à leur position initiale
         chat.transform.position = positionInitialChat;
         verreLait.transform.position = positionInitialeLait;

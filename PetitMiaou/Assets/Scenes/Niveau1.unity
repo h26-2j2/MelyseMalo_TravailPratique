@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Niveau1
   audio: {fileID: 580893113}
   instructions: {fileID: 8300000, guid: 7526734122dda3b428e65d7a8e26c16b, type: 3}
+  delaiInactif: 15
 --- !u!82 &580893113
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3246,7 +3247,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4098,7 +4099,7 @@ MonoBehaviour:
   audio: {fileID: 1861730342}
   son: {fileID: 8300000, guid: 6c1ae070aefe73a46ad7b8f5ba757a50, type: 3}
   zoneDrop: {fileID: 1418899861}
-  repas: {fileID: 911173719}
+  repas: {fileID: 1762412636}
 --- !u!61 &1861730344
 BoxCollider2D:
   m_ObjectHideFlags: 0

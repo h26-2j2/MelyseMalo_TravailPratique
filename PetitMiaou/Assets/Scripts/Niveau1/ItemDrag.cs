@@ -1,52 +1,50 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ItemDrag : MonoBehaviour
 {
+    //Audio
     public AudioSource audio;
     public AudioClip son;
+
+    //Zone de Drop (Gamelle)
     public ZoneDrop zoneDrop = null;
+
+    //Repas associer
     public GameObject repas;
 
     void Start()
     {
+        //Initialisation des variables
         audio = GetComponent<AudioSource>();
         repas.SetActive(false);
     }
 
-    // Fonciton OnBeginDrag : Exécutée quand on commence le drag.
-    // - Enlève le parent de ce Transform.
-    // - Désactive le Collider2D pour éviter des bugs de détection.
+    //Début du drag
     public void OnBeginDrag(BaseEventData eventData)
     {
         transform.SetParent(null);
         GetComponent<Collider2D>().enabled = false;
-        audio.PlayOneShot(son);
-        Debug.Log("Debut Drag");
+        audio.PlayOneShot(son); //Son de l'aliment choisit
+        //Debug.Log("Debut Drag");
     }
 
-    // Fonction OnDrag : Exécutée pendant qu'on glisse ce bloc.
-    // - Récupère les infos du pointeur et le traite comme un PointerEventData.
-    // - On fait la conversion d'une position du pointeur à l'écran (en pixels)
-    // à une position au monde (en unités).
-    // - On téléporte le bloc à la position de la souris
+    //Drag
     public void OnDrag(BaseEventData eventData)
     {
         PointerEventData pointerData = eventData as PointerEventData;
         Vector3 positionPointeur = Camera.main.ScreenToWorldPoint(pointerData.position);
         positionPointeur.z = 0;
         transform.position = positionPointeur;
-        Debug.Log("Drag");
+        //Debug.Log("Drag");
     }
-    // Fonction OnEndDrag : Exécutée quand le drag est fini.
-    // - On réactive le Collider.
+
+    //Fin du drag
     public void OnEndDrag(BaseEventData eventData)
     {
         GetComponent<Collider2D>().enabled = true;
-        repas.SetActive(true);
-        Debug.Log("Fin Drag");
+        repas.SetActive(true); //Visuel du repas dans la gamelle
+        //Debug.Log("Fin Drag");
     }
     
 }
