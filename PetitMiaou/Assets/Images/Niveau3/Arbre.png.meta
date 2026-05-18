@@ -116,10 +116,10 @@ TextureImporter:
       name: Arbre_0
       rect:
         serializedVersion: 2
-        x: 123
-        y: 320
-        width: 3360
-        height: 2784
+        x: 286
+        y: 115
+        width: 2548
+        height: 2114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

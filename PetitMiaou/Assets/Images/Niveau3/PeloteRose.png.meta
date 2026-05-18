@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d809951706fa5fb4c8652ac4d256c670
+guid: 79975e34d77d64a4fa9fd07fa4282185
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4754858352876936714
-    second: Gazon_0
+      213: -5877398174784999312
+    second: PeloteRose_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gazon_0
+      name: PeloteRose_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8000
-        height: 3560
+        x: 2540
+        y: 2478
+        width: 420
+        height: 1127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f1a8773589530eb0800000000000000
-      internalID: -4754858352876936714
+      spriteID: 0703964ff794f6ea0800000000000000
+      internalID: -5877398174784999312
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gazon_0: -4754858352876936714
+      PeloteRose_0: -5877398174784999312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
