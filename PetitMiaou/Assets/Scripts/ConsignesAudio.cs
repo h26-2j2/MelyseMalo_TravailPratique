@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class InstructionNiveau1 : MonoBehaviour
+public class ConsignesAudio : MonoBehaviour
 {
     //Audio
     public AudioSource audio;
+    public AudioClip instructionsDebut;
     public AudioClip instructions;
-
+    
     //Temps et délais
     public float delaiInactif = 15f;
     float tempsInactif = 0f;
@@ -20,7 +21,7 @@ public class InstructionNiveau1 : MonoBehaviour
         positionSouris = Input.mousePosition;
 
         //Premier lancement des instructions (après l'animation qui dure 3.5seconde)
-        Invoke("Instructions", 3.5f);
+        Invoke("InstructionsDebut", 3.5f);
     }
     
     void Update()
@@ -51,6 +52,14 @@ public class InstructionNiveau1 : MonoBehaviour
         }
     }
 
+    //Première instructions audio
+    void InstructionsDebut()
+    {
+        audio.PlayOneShot(instructionsDebut);
+        //Debug.Log("Audio joué");
+
+    }
+    
     //Instructions audio
     void Instructions()
     {
