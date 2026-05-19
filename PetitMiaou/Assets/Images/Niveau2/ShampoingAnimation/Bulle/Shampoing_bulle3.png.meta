@@ -116,10 +116,10 @@ TextureImporter:
       name: Shampoing_bulle3_0
       rect:
         serializedVersion: 2
-        x: 4309
-        y: 249
-        width: 2161
-        height: 789
+        x: 323
+        y: 103
+        width: 712
+        height: 1118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

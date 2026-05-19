@@ -116,10 +116,10 @@ TextureImporter:
       name: Savon_bulle4_0
       rect:
         serializedVersion: 2
-        x: 682
-        y: 401
-        width: 1636
-        height: 779
+        x: 119
+        y: 338
+        width: 1153
+        height: 584
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -116,10 +116,10 @@ TextureImporter:
       name: Bain_bulle4_0
       rect:
         serializedVersion: 2
-        x: 2540
-        y: 1403
-        width: 2295
-        height: 1110
+        x: 19
+        y: 343
+        width: 1253
+        height: 606
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

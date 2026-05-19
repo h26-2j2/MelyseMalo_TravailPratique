@@ -116,10 +116,10 @@ TextureImporter:
       name: Savon_herbe8_0
       rect:
         serializedVersion: 2
-        x: 4284
-        y: 333
-        width: 2111
-        height: 705
+        x: 49
+        y: 364
+        width: 1182
+        height: 558
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

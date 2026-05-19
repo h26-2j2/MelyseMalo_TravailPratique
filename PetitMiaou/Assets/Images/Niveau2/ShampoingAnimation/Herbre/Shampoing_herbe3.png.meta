@@ -116,10 +116,10 @@ TextureImporter:
       name: Shampoing_herbe3_0
       rect:
         serializedVersion: 2
-        x: 4309
-        y: 333
-        width: 2136
-        height: 705
+        x: 242
+        y: 81
+        width: 840
+        height: 1140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

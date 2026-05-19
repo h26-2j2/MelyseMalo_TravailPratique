@@ -116,10 +116,10 @@ TextureImporter:
       name: Canard_herbe7_0
       rect:
         serializedVersion: 2
-        x: 4246
-        y: 333
-        width: 2149
-        height: 705
+        x: 123
+        y: 235
+        width: 986
+        height: 832
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

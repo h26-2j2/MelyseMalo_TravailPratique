@@ -116,10 +116,10 @@ TextureImporter:
       name: Canard_bulle4_0
       rect:
         serializedVersion: 2
-        x: 6478
-        y: 1367
-        width: 1294
-        height: 1182
+        x: 219
+        y: 225
+        width: 919
+        height: 842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

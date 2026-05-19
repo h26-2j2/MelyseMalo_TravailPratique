@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47b80fe473acf2a4887f5da04018db4a
+guid: a99302429fff8834a9703e25d178def3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4250963697287366857
-    second: Savon_0
+      213: -3700861530126678582
+    second: Revitalisant_bulle5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Savon_0
+      name: Revitalisant_bulle5_0
       rect:
         serializedVersion: 2
-        x: 745
-        y: 465
-        width: 1451
-        height: 715
+        x: 325
+        y: 103
+        width: 642
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c805e9c5f47efa30800000000000000
-      internalID: 4250963697287366857
+      spriteID: ac504eddb06e3acc0800000000000000
+      internalID: -3700861530126678582
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Savon_0: 4250963697287366857
+      Revitalisant_bulle5_0: -3700861530126678582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

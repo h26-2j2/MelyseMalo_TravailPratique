@@ -116,10 +116,10 @@ TextureImporter:
       name: Revitalisant_bulle1_0
       rect:
         serializedVersion: 2
-        x: 4309
-        y: 335
-        width: 2086
-        height: 703
+        x: 325
+        y: 108
+        width: 642
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

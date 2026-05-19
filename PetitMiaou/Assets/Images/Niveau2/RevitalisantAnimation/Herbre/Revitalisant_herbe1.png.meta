@@ -116,10 +116,10 @@ TextureImporter:
       name: Revitalisant_herbe1_0
       rect:
         serializedVersion: 2
-        x: 4309
-        y: 333
-        width: 2086
-        height: 705
+        x: 325
+        y: 82
+        width: 642
+        height: 1142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

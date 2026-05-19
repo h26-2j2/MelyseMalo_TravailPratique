@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd0aaf53cea8fbe4a8702554319750a9
+guid: 5f7915258c6e9aa4a93ffc001adc32ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8991496158347712944
-    second: Canard_0
+      213: -6802781428268926955
+    second: Brosse_bulle7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Canard_0
+      name: Brosse_bulle7_0
       rect:
         serializedVersion: 2
-        x: 6478
-        y: 1401
-        width: 1254
-        height: 1148
+        x: 87
+        y: 504
+        width: 1117
+        height: 377
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 056256a02e9c73380800000000000000
-      internalID: -8991496158347712944
+      spriteID: 518f76b655aa791a0800000000000000
+      internalID: -6802781428268926955
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Canard_0: -8991496158347712944
+      Brosse_bulle7_0: -6802781428268926955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

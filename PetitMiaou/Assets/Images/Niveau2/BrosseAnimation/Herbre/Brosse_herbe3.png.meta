@@ -116,10 +116,10 @@ TextureImporter:
       name: Brosse_herbe3_0
       rect:
         serializedVersion: 2
-        x: 4309
-        y: 333
-        width: 2136
-        height: 705
+        x: 64
+        y: 493
+        width: 1208
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
