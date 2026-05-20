@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Cachette : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class Cachette : MonoBehaviour
     public int index;
 
     //Détect l'objet cliqué
-    private void OnMouseDown()
+    public void AuClic(BaseEventData eventData)
     {
         Debug.Log("Objet cliqué: " + gameObject.name);
         niveau.VerificationClique(index);

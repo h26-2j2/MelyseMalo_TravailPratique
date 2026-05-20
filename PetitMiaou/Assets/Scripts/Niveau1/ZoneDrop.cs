@@ -5,6 +5,9 @@ public class ZoneDrop : MonoBehaviour
 {
     //Game object
     public GameObject pointSnap;
+    public GameObject boutonMenu;
+    public GameObject boutonFermer;
+    public GameObject pannelMenu;
     public GameObject chat;
     public GameObject verreLait;
     public GameObject verreEau;
@@ -14,6 +17,9 @@ public class ZoneDrop : MonoBehaviour
     public GameObject eau;
     public GameObject croquettes;
     public GameObject pate;
+
+    //Nombre de parties avant la fin du niveau
+    public int nbreParties = 3;
 
     //Position initial des objets
     Vector3 positionInitialChat;
@@ -25,15 +31,32 @@ public class ZoneDrop : MonoBehaviour
     //Audio
     public AudioSource audio;
     public AudioClip miaou;
+    public AudioClip bravo;
 
     void Start()
     {
         //Initialisation des variables
+        nbreParties = 3;
+
+        boutonMenu.SetActive(true);
+        boutonFermer.SetActive(true);
+        pannelMenu.SetActive(false);
+        chat.SetActive(true);
+        verreLait.SetActive(true);
+        verreEau.SetActive(true);
+        sacCroquettes.SetActive(true);
+        cannePate.SetActive(true);
+        lait.SetActive(false);
+        eau.SetActive(false);
+        pate.SetActive(false);
+        croquettes.SetActive(false);
+
         positionInitialChat = chat.transform.position;
         positionInitialeLait = verreLait.transform.position;
         positionInitialeEau = verreEau.transform.position;
         positionInitialePate = cannePate.transform.position;
         positionInitialeCroquettes = sacCroquettes.transform.position;
+
     }
 
     //Objet déposé dans la zone
@@ -60,8 +83,16 @@ public class ZoneDrop : MonoBehaviour
         chat.transform.position = new Vector3(0, -1f, 0);
         audio.PlayOneShot(miaou);
 
-        //Appel de la Fonction Replacer() après 1 seconde
-        Invoke("Replacer", 1f);
+        if (nbreParties >= 0)
+        {
+            //Appel de la Fonction Replacer() après 1 seconde
+            Invoke("Replacer", 1f);
+        }
+        else
+        {
+            Invoke("Fin", 3f);
+        }
+       
     }
 
     //Retour au stade initial
@@ -86,5 +117,25 @@ public class ZoneDrop : MonoBehaviour
         eau.SetActive(false);
         pate.SetActive(false);
         croquettes.SetActive(false);
+
+        //Nombre de partie restant avant la fin du niveau
+        nbreParties--;
+    }
+
+    public void Fin()
+    {
+        boutonMenu.SetActive(false);
+        boutonFermer.SetActive(false);
+        pannelMenu.SetActive(true);
+        chat.SetActive(false);
+        verreLait.SetActive(false);
+        verreEau.SetActive(false);
+        sacCroquettes.SetActive(false);
+        cannePate.SetActive(false);
+        lait.SetActive(false);
+        eau.SetActive(false);
+        pate.SetActive(false);
+        croquettes.SetActive(false);
+        audio.PlayOneShot(bravo);
     }
 }

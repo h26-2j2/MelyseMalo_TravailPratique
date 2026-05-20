@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class Niveau2 : MonoBehaviour
 {
-    public Transform chat;
+    //Objet du jeu
+    public GameObject visuelChat;
+    public GameObject elemennts;
+    public GameObject boutonMenu;
+    public GameObject boutonFermer;
+    public GameObject pannelMenu;
 
+    //Position des objets
+    public Transform chat;
     public Transform bain;
     public Transform brosse;
     public Transform canard;
@@ -11,11 +18,17 @@ public class Niveau2 : MonoBehaviour
     public Transform shampoing;
     public Transform revitalisant;
 
+    //Liste des objets
     private Transform[] positionsChat;
 
+    //Variables int
     public int nombreChance = 3;
-
     private int positionChat;
+
+    //Audio
+    public AudioSource audio;
+    public AudioClip miaou;
+    public AudioClip bravo;
 
     private void Awake()
     {
@@ -33,6 +46,12 @@ public class Niveau2 : MonoBehaviour
 
     private void Start()
     {
+        boutonMenu.SetActive(true);
+        boutonFermer.SetActive(true);
+        pannelMenu.SetActive(false);
+        visuelChat.SetActive(true);
+        elemennts.SetActive(true);
+
         NouvellePartie();
     }
 
@@ -75,6 +94,7 @@ public class Niveau2 : MonoBehaviour
     {
         Debug.Log("Perdu!");
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
+        audio.PlayOneShot(miaou);
         Invoke("NouvellePartie", 2f);
     }
 
@@ -82,6 +102,16 @@ public class Niveau2 : MonoBehaviour
     {
         Debug.Log("Gagné!");
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
-        Invoke("NouvellePartie", 2f);
+        audio.PlayOneShot(bravo);
+        Invoke("Fin", 2f);
+    }
+
+    public void Fin()
+    {
+        boutonMenu.SetActive(false);
+        boutonFermer.SetActive(false);
+        pannelMenu.SetActive(true);
+        visuelChat.SetActive(false);
+        elemennts.SetActive(false);
     }
 }

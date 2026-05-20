@@ -2873,6 +2873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZoneDrop
   pointSnap: {fileID: 1418899858}
+  boutonMenu: {fileID: 1907690527}
+  boutonFermer: {fileID: 1579673310}
+  pannelMenu: {fileID: 1736900325}
   chat: {fileID: 185612788}
   verreLait: {fileID: 1718591955}
   verreEau: {fileID: 1515292026}
@@ -2882,8 +2885,10 @@ MonoBehaviour:
   eau: {fileID: 117175515}
   croquettes: {fileID: 911173719}
   pate: {fileID: 1762412636}
+  nbreParties: 3
   audio: {fileID: 185612793}
   miaou: {fileID: 8300000, guid: b7baffcd59636944a9735248b049a4f2, type: 3}
+  bravo: {fileID: 8300000, guid: 2ed294609baa0b04abec06e04bd55c84, type: 3}
 --- !u!61 &1418899862
 BoxCollider2D:
   m_ObjectHideFlags: 0
