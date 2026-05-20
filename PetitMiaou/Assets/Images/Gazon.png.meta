@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6302c704b50f20a4bbe1f1534a5062ab
+guid: 166c53feb32f29848a9a3f318f8beb34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7826949717507848784
-    second: Chat_0
+      213: -4754858352876936714
+    second: Gazon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chat_0
+      name: Gazon_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 13
-        width: 732
-        height: 733
+        x: 0
+        y: 0
+        width: 8000
+        height: 3454
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05a36e29c49ee9c60800000000000000
-      internalID: 7826949717507848784
+      spriteID: 6f1a8773589530eb0800000000000000
+      internalID: -4754858352876936714
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Chat_0: 7826949717507848784
+      Gazon_0: -4754858352876936714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

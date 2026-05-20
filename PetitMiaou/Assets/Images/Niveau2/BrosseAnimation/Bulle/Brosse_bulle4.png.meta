@@ -116,10 +116,10 @@ TextureImporter:
       name: Brosse_bulle4_0
       rect:
         serializedVersion: 2
-        x: 4238
-        y: 245
-        width: 2232
-        height: 793
+        x: 49
+        y: 451
+        width: 1194
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ac26c973e6777154183225463af1510e
+guid: edbf1da6314ef4042b34088a36b62a87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3768413906985000238
-    second: Ciel_0
+      213: 7826949717507848784
+    second: Chat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ciel_0
+      name: Chat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8000
-        height: 4496
+        x: 10
+        y: 13
+        width: 732
+        height: 733
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2d9b748b781c4430800000000000000
-      internalID: 3768413906985000238
+      spriteID: 05a36e29c49ee9c60800000000000000
+      internalID: 7826949717507848784
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ciel_0: 3768413906985000238
+      Chat_0: 7826949717507848784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
