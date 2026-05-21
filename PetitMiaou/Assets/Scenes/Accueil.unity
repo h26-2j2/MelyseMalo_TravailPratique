@@ -1399,6 +1399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c7195018542cc479d84e12c7ff25ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GestionScene
+  audio: {fileID: 1992140375}
+  boutonMenu: {fileID: 8300000, guid: 1355b5e238184dc4ba3a8159a8b83a1d, type: 3}
+  boutonNiveau: {fileID: 8300000, guid: b7076cd3ea7cdfa44ac554e7ca26e32e, type: 3}
 --- !u!4 &1635344777
 Transform:
   m_ObjectHideFlags: 0

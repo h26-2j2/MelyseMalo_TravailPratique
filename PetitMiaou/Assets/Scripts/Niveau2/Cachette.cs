@@ -12,10 +12,16 @@ public class Cachette : MonoBehaviour
     //Animation
     public Animator animator;
 
-    //Détect l'objet cliqué
+    //Détecte l'objet cliqué
     public void AuClic(BaseEventData eventData)
     {
-        Debug.Log("Objet cliqué: " + gameObject.name);
+        //Empêche de cliquer n'importe quand
+        if (!niveau.clic)
+        {
+            return;
+        }
+
+        //Debug.Log("Objet cliqué: " + gameObject.name);
         niveau.VerificationClic(index, this);
     }
 

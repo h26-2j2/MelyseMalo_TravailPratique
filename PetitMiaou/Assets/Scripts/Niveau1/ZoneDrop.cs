@@ -56,7 +56,6 @@ public class ZoneDrop : MonoBehaviour
         positionInitialeEau = verreEau.transform.position;
         positionInitialePate = cannePate.transform.position;
         positionInitialeCroquettes = sacCroquettes.transform.position;
-
     }
 
     //Objet déposé dans la zone
@@ -72,28 +71,36 @@ public class ZoneDrop : MonoBehaviour
         }
 
         //Appel de la Fonction DeplacementChat() après 1 seconde
-        Invoke("DeplacementChat", 1f);
+        Invoke("DeplacementChat", 1.5f);
 
     }
 
     //Mini animation du déplacement du chat avec effet sonore.
     public void DeplacementChat()
     {
+        //Désactive les éléments déplaçables
+        verreLait.SetActive(false);
+        verreEau.SetActive(false);
+        sacCroquettes.SetActive(false);
+        cannePate.SetActive(false);
+
         //Deplacement du chat et effet sonore
         chat.transform.position = new Vector3(0, -1f, 0);
         audio.PlayOneShot(miaou);
 
-        if (nbreParties >= 0)
+        //Nombre de partie restant avant la fin du niveau
+        nbreParties--;
+
+        if (nbreParties > 0)
         {
-            //Appel de la Fonction Replacer() après 1 seconde
+            //Appel de la fonction Replacer() après 1 seconde
             Invoke("Replacer", 1f);
         }
         else
         {
-            audio.PlayOneShot(bravo);
-            Invoke("Fin", 2f);
+            //Appel de la fonction Gagner() après 1 seconde
+            Invoke("Gagner", 1f);
         }
-       
     }
 
     //Retour au stade initial
@@ -119,8 +126,17 @@ public class ZoneDrop : MonoBehaviour
         pate.SetActive(false);
         croquettes.SetActive(false);
 
-        //Nombre de partie restant avant la fin du niveau
-        nbreParties--;
+        //Réactive les éléments déplaçables
+        verreLait.SetActive(true);
+        verreEau.SetActive(true);
+        sacCroquettes.SetActive(true);
+        cannePate.SetActive(true);
+    }
+    public void Gagner()
+    {
+        //Un message de bravo est annoncé avant d'appeler le menu de fin
+        audio.PlayOneShot(bravo);
+        Invoke("Fin", 7.5f);
     }
 
     public void Fin()
@@ -129,10 +145,6 @@ public class ZoneDrop : MonoBehaviour
         boutonFermer.SetActive(false);
         pannelMenu.SetActive(true);
         chat.SetActive(false);
-        verreLait.SetActive(false);
-        verreEau.SetActive(false);
-        sacCroquettes.SetActive(false);
-        cannePate.SetActive(false);
         lait.SetActive(false);
         eau.SetActive(false);
         pate.SetActive(false);

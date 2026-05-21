@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Niveau2 : MonoBehaviour
 {
-    //public Cachette cache;
-
     //Objet du jeu
     public GameObject visuelChat;
     public GameObject elemennts;
@@ -33,7 +31,10 @@ public class Niveau2 : MonoBehaviour
     public AudioClip bravo;
     public AudioClip perte;
 
-    private void Awake()
+    //Page cliquable
+    public bool clic = false;
+
+    void Awake()
     {
         //Liste des positions possibles du chat [https://www.w3schools.com/cs/cs_arrays.php]
         positionsChat = new Transform[]
@@ -47,21 +48,30 @@ public class Niveau2 : MonoBehaviour
         };
     }
 
-    private void Start()
+    void Start()
     {
+        //Empêche les cliques avant la fin des instructions
+        clic = false;
+
         //Mise en place du visuel
         boutonMenu.SetActive(true);
         boutonFermer.SetActive(true);
         pannelMenu.SetActive(false);
-        visuelChat.SetActive(true);
+        visuelChat.SetActive(false);
         elemennts.SetActive(true);
 
         //Début de la partie après les instructions
-        Invoke("NouvellePartie", 2f);
+        Invoke("NouvellePartie", 4f);
     }
 
     public void NouvellePartie()
     {
+        //Réactive le clic
+        clic = true;
+
+        //Affiche le chat caché
+        visuelChat.SetActive(true);
+
         //Réinitialisation des chances
         nombreChance = 3;
 
@@ -74,7 +84,7 @@ public class Niveau2 : MonoBehaviour
         //Déplace le chat
         chat.position = positionsChat[positionChat].position;
 
-        Debug.Log("Nouvelle position : " + positionChat);
+        //Debug.Log("Nouvelle position : " + positionChat);
     }
 
     //Vérifie la cachette cliquée
@@ -92,8 +102,7 @@ public class Niveau2 : MonoBehaviour
             nombreChance--;
             cache.MauvaiseReponse();
             audio.PlayOneShot(perte);
-            //cache.RestaureAnimmation();
-            Debug.Log("Mauvaise cachette - Chances restantes : " + nombreChance);
+            //Debug.Log("Mauvaise cachette - Chances restantes : " + nombreChance);
             if (nombreChance <= 0)
             {
                 Perdu();
@@ -101,10 +110,12 @@ public class Niveau2 : MonoBehaviour
         }
     }
 
-    void Perdu()
+    public void Perdu()
     {
-        Debug.Log("Perdu!");
+        //Désactive le clic
+        clic = false;
 
+        //Debug.Log("Perdu!");
         //Le chat sort de sa cachette
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
 
@@ -115,10 +126,12 @@ public class Niveau2 : MonoBehaviour
         Invoke("NouvellePartie", 2f);
     }
 
-    void Gagner()
+    public void Gagner()
     {
-        Debug.Log("Gagné!");
+        //Désactive le clic
+        clic = false;
 
+        //Debug.Log("Gagné!");
         //Le chat sort de sa cachette
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
 

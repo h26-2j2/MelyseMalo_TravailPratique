@@ -54,7 +54,7 @@ public class ConsignesAudio : MonoBehaviour
     }
 
     //Première instructions audio
-    void InstructionsDebut()
+    public void InstructionsDebut()
     {
         audio.PlayOneShot(instructionsDebut);
         //Debug.Log("Audio joué");
@@ -62,7 +62,7 @@ public class ConsignesAudio : MonoBehaviour
     }
     
     //Instructions audio
-    void Instructions()
+    public void Instructions()
     {
         audio.PlayOneShot(instructions);
         //Debug.Log("Audio joué");
