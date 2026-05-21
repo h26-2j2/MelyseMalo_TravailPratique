@@ -21,7 +21,7 @@ public class ConsignesAudio : MonoBehaviour
         audio = GetComponent<AudioSource>();
         positionSouris = Input.mousePosition;
 
-        //Premier lancement des instructions (après l'animation qui dure 3.5seconde)
+        //Premier lancement des instructions (configurable dans l'inspecteur selon s'il y a une animation où pas)
         Invoke("InstructionsDebut", delaiInitial);
     }
     

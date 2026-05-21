@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Niveau2 : MonoBehaviour
 {
+    //public Cachette cache;
+
     //Objet du jeu
     public GameObject visuelChat;
     public GameObject elemennts;
@@ -54,7 +56,8 @@ public class Niveau2 : MonoBehaviour
         visuelChat.SetActive(true);
         elemennts.SetActive(true);
 
-        NouvellePartie();
+        //Début de la partie après les instructions
+        Invoke("NouvellePartie", 2f);
     }
 
     public void NouvellePartie()
@@ -75,18 +78,21 @@ public class Niveau2 : MonoBehaviour
     }
 
     //Vérifie la cachette cliquée
-    public void VerificationClic(int index)
+    public void VerificationClic(int index, Cachette cache)
     {
         //Si le chat est trouvé
         if (index == positionChat)
         {
+            cache.BonneReponse();
             Gagner();
         }
         //Si le chat n'est pas trouvé, le joueur à encore 3 chances
         else
         {
             nombreChance--;
+            cache.MauvaiseReponse();
             audio.PlayOneShot(perte);
+            //cache.RestaureAnimmation();
             Debug.Log("Mauvaise cachette - Chances restantes : " + nombreChance);
             if (nombreChance <= 0)
             {
@@ -121,7 +127,7 @@ public class Niveau2 : MonoBehaviour
 
         //Un message de bravo est annoncé avant d'appeler le menu de fin
         audio.PlayOneShot(bravo);
-        Invoke("Fin", 2f);
+        Invoke("Fin", 3f);
     }
 
     public void Fin()
