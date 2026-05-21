@@ -90,7 +90,8 @@ public class ZoneDrop : MonoBehaviour
         }
         else
         {
-            Invoke("Fin", 3f);
+            audio.PlayOneShot(bravo);
+            Invoke("Fin", 2f);
         }
        
     }
@@ -136,6 +137,5 @@ public class ZoneDrop : MonoBehaviour
         eau.SetActive(false);
         pate.SetActive(false);
         croquettes.SetActive(false);
-        audio.PlayOneShot(bravo);
     }
 }

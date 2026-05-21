@@ -29,6 +29,7 @@ public class Niveau2 : MonoBehaviour
     public AudioSource audio;
     public AudioClip miaou;
     public AudioClip bravo;
+    public AudioClip perte;
 
     private void Awake()
     {
@@ -46,6 +47,7 @@ public class Niveau2 : MonoBehaviour
 
     private void Start()
     {
+        //Mise en place du visuel
         boutonMenu.SetActive(true);
         boutonFermer.SetActive(true);
         pannelMenu.SetActive(false);
@@ -73,15 +75,18 @@ public class Niveau2 : MonoBehaviour
     }
 
     //Vérifie la cachette cliquée
-    public void VerificationClique(int index)
+    public void VerificationClic(int index)
     {
+        //Si le chat est trouvé
         if (index == positionChat)
         {
             Gagner();
         }
+        //Si le chat n'est pas trouvé, le joueur à encore 3 chances
         else
         {
             nombreChance--;
+            audio.PlayOneShot(perte);
             Debug.Log("Mauvaise cachette - Chances restantes : " + nombreChance);
             if (nombreChance <= 0)
             {
@@ -93,21 +98,35 @@ public class Niveau2 : MonoBehaviour
     void Perdu()
     {
         Debug.Log("Perdu!");
+
+        //Le chat sort de sa cachette
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
+
+        //Et fait miaou
         audio.PlayOneShot(miaou);
+
+        //Puis une autre partie commence
         Invoke("NouvellePartie", 2f);
     }
 
     void Gagner()
     {
         Debug.Log("Gagné!");
+
+        //Le chat sort de sa cachette
         chat.GetComponent<SpriteRenderer>().sortingOrder = 4;
+
+        //Et fait miaou
+        audio.PlayOneShot(miaou);
+
+        //Un message de bravo est annoncé avant d'appeler le menu de fin
         audio.PlayOneShot(bravo);
         Invoke("Fin", 2f);
     }
 
     public void Fin()
     {
+        //Mise en place du visuel de fin
         boutonMenu.SetActive(false);
         boutonFermer.SetActive(false);
         pannelMenu.SetActive(true);

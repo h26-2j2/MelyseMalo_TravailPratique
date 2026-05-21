@@ -865,7 +865,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f0b76acda34c1a448b056079aabc93fc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2918,6 +2918,7 @@ MonoBehaviour:
   audio: {fileID: 887652867}
   instructionsDebut: {fileID: 8300000, guid: 6f664ca59bacb784aab908032403756a, type: 3}
   instructions: {fileID: 8300000, guid: 2f12b7f39acfce54bacbd55133996998, type: 3}
+  delaiInitial: 0
   delaiInactif: 15
 --- !u!114 &1927299167
 MonoBehaviour:
@@ -2947,6 +2948,7 @@ MonoBehaviour:
   audio: {fileID: 887652867}
   miaou: {fileID: 8300000, guid: b7baffcd59636944a9735248b049a4f2, type: 3}
   bravo: {fileID: 8300000, guid: 2ed294609baa0b04abec06e04bd55c84, type: 3}
+  perte: {fileID: 8300000, guid: c3993bcd14df49f468caa7dad105471f, type: 3}
 --- !u!1 &1940026028
 GameObject:
   m_ObjectHideFlags: 0

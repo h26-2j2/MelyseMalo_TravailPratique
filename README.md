@@ -1,3 +1,6 @@
+Note:
+Dans le 3e niveau, j'ai essayé de mettre un Buoyancy Effector 2D, mais il je n'ai pas réussi à le faire parfaitement fonctionner avec le clic. J'ai par contre laisser l'objet "eau", mais il est inactif. 
+
 Sources utilisées
 
 Image button : https://www.youtube.com/watch?v=674k6lHqpPc
@@ -13,3 +16,5 @@ On Mouse Down : https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDo
 Listes : https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
 
 Ordre des sprites renderer : https://docs.unity3d.com/ScriptReference/SpriteRenderer.html
+
+Mouse down (Pour le niveau 2, je ne l'ai pas utilisé au final, mais au début je pensais que le event trigger ne fonctionnait pas avant qu'on se rende compte que c'était un problème de box collider) : https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html

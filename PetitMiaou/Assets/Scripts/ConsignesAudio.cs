@@ -7,8 +7,9 @@ public class ConsignesAudio : MonoBehaviour
     public AudioSource audio;
     public AudioClip instructionsDebut;
     public AudioClip instructions;
-    
+
     //Temps et délais
+    public float delaiInitial = 0f; 
     public float delaiInactif = 15f;
     float tempsInactif = 0f;
 
@@ -21,7 +22,7 @@ public class ConsignesAudio : MonoBehaviour
         positionSouris = Input.mousePosition;
 
         //Premier lancement des instructions (après l'animation qui dure 3.5seconde)
-        Invoke("InstructionsDebut", 3.5f);
+        Invoke("InstructionsDebut", delaiInitial);
     }
     
     void Update()

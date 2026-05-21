@@ -1572,6 +1572,7 @@ MonoBehaviour:
   audio: {fileID: 1674420743}
   instructionsDebut: {fileID: 8300000, guid: 4ec8a6fc174e06a47a088654b8f4aa7c, type: 3}
   instructions: {fileID: 8300000, guid: 44b3c7dc625a09942b22d9c8586d2180, type: 3}
+  delaiInitial: 2
   delaiInactif: 15
 --- !u!1 &587794184
 GameObject:
@@ -3483,7 +3484,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f0b76acda34c1a448b056079aabc93fc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0

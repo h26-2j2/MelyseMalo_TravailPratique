@@ -11,6 +11,6 @@ public class Cachette : MonoBehaviour
     public void AuClic(BaseEventData eventData)
     {
         Debug.Log("Objet cliqué: " + gameObject.name);
-        niveau.VerificationClique(index);
+        niveau.VerificationClic(index);
     }
 }
