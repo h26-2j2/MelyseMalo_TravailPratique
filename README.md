@@ -1,7 +1,6 @@
-Note:
-Dans le 3e niveau, j'ai essayé de mettre un Buoyancy Effector 2D, mais il je n'ai pas réussi à le faire parfaitement fonctionner avec le clic. J'ai par contre laisser l'objet "eau", mais il est inactif. 
-
 Sources utilisées
+
+Effets sonores et musique : https://pixabay.com/fr/sound-effects/
 
 Image button : https://www.youtube.com/watch?v=674k6lHqpPc
 
@@ -11,9 +10,7 @@ Drag and Drop :
 - https://www.youtube.com/watch?v=BGr-7GZJNXg
 - https://youtu.be/sXTAzcxNqv0?si=We_rt0HhI8Cr2cu-
 
-On Mouse Down : https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
-
-Listes : https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
+Listes : https://www.w3schools.com/cs/cs_arrays.php
 
 Ordre des sprites renderer : https://docs.unity3d.com/ScriptReference/SpriteRenderer.html
 
